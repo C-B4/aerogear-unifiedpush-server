@@ -209,7 +209,7 @@ public class FCMPushNotificationSender implements PushNotificationSender {
         try {
             logger.info(String.format("Sent push notification to FCM Server for %d registrationIDs", pushTargets.size()));
             firebaseMulticastMessage.addAllTokens(pushTargets);
-            BatchResponse multicastResult = firebaseMessaging.sendMulticast(firebaseMulticastMessage.build());
+            BatchResponse multicastResult = firebaseMessaging.sendEachForMulticast(firebaseMulticastMessage.build());
             // after sending, let's identify the inactive/invalid registrationIDs and trigger their deletion:
             handleMulticastResponses(multicastResult, pushTargets, androidVariant);
             callback.onSuccess();
