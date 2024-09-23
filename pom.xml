@@ -594,7 +594,7 @@
 		<version.javax.validation>2.0.1.Final</version.javax.validation>
 
 		<gcm-server.version>1.0.0</gcm-server.version>
-		<firebase-admin.version>8.0.0</firebase-admin.version>
+		<firebase-admin.version>9.2.0</firebase-admin.version>
 		<pushy.version>0.10.2</pushy.version>
 		
 		<slfj4.version>1.7.21</slfj4.version>
