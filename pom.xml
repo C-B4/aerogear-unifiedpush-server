@@ -606,7 +606,7 @@
 		<ant.contrib.version>20020829</ant.contrib.version>
 		<aerogear.crypto.version>0.1.5</aerogear.crypto.version>
 
-		<postgresql.version>42.1.4</postgresql.version>
+		<postgresql.version>42.7.4</postgresql.version>
 		<fasterxml.version>2.9.5</fasterxml.version>
 		<wildfly.version>14.0.1.Final</wildfly.version>
 		<org.infinispan>9.3.1.Final</org.infinispan>
