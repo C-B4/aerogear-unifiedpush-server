@@ -92,10 +92,11 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 		web.ignoring().antMatchers("/rest/sender");
 		web.ignoring().antMatchers("/rest/sender/*");
 		web.ignoring().antMatchers("/rest/database/*/aliases");
+		web.ignoring().antMatchers("/rest/application/info");
 
 		// Variant Level Basic Authentication
 		web.ignoring().antMatchers("/rest/registry/device/**");
-	
+
 		// Either Application or Variant Level Basic Authentication
 		// 1) /rest/database/**
 		web.ignoring().requestMatchers(DATABASE_REQUEST_MATCHER);
